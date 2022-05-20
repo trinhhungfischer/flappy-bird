@@ -144,6 +144,7 @@ fr.Localization = cc.Class.extend(
         },
         getPathFileLang:function(code)
         {
+            cc.log("localize/" + code);
             return "localize/" + code;
         },
         findLastNotOf:function(strSource,text) {

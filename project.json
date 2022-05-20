@@ -39,6 +39,7 @@
         "src/base/Resource.js",
         "src/base/UIFactory.js",
         "src/modules/animation/ScreenDragonbones.js",
+        "src/modules/gameplay/ScreenGame.js",
         "src/modules/localization/ScreenLocalization.js",
         "src/modules/mainmenu/ScreenMenu.js",
         "src/modules/testnetwork/network/Network.js",

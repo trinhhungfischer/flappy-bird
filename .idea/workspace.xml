@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="">
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Start Project&#10;'">
+      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/game/animation/character/chipu/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/game/animation/eff_dice_number/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/game/animation/firework_test/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/character/chipu/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/character/chipu/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/eff_dice_number/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/eff_dice_number/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/firework_test/texture.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/high/game/animation/firework_test/texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/en" beforeDir="false" afterPath="$PROJECT_DIR$/res/localize/en" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/vi" beforeDir="false" afterPath="$PROJECT_DIR$/res/localize/vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/shaders/change_color.fsh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/Localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/Localization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +161,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -529,6 +555,17 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/HelloJavascript/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -682,8 +719,21 @@
       <workItem from="1652685446035" duration="370000" />
       <workItem from="1652755606925" duration="6470000" />
       <workItem from="1652836117663" duration="815000" />
-      <workItem from="1652846565266" duration="1565000" />
+      <workItem from="1652846565266" duration="2329000" />
+      <workItem from="1652849117670" duration="40000" />
+      <workItem from="1652922039534" duration="2038000" />
+      <workItem from="1652941658591" duration="4123000" />
+      <workItem from="1653009151440" duration="1110000" />
+      <workItem from="1653010306600" duration="3278000" />
     </task>
+    <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
+      <created>1652848438089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652848438089</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -778,6 +828,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'feat: Start Project&#10;'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'feat: Start Project&#10;'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
