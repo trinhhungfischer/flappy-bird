@@ -22,6 +22,18 @@ var ScreenGame = cc.Layer.extend({
         sprite.setPosition(cc.p(size.width / 2, size.height / 2));
         var i = 0;
         this.addChild(sprite);
-    }
+    },
 
+
+    addTouchListenr:function () {
+        var self = this;
+        cc.eventManager.addListener({
+            prevTouchID: -1,
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+
+            onTouchBegan: function (touch, event) {
+
+            }
+        }, this);
+    }
 });

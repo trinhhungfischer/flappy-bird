@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+===================================================================
+
+Sprite sheet file created for UIKit using TexturePacker
+https://www.codeandweb.com/texturepacker
+
+===================================================================
+$TexturePacker:SmartUpdate:3e899d2be1e9cb65afec1191f7ec6a12:35f3cbb8f4efbc7aa303d6f3f82fb0dc:2f7983b4c14cf09938dfa44df99367f8$
+-->
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+
+                        <key>0</key>
+			<dict>
+				<key>x</key><real>322</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>1</key>
+			<dict>
+				<key>x</key><real>0</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>16</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>2</key>
+			<dict>
+				<key>x</key><real>346</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>3</key>
+			<dict>
+				<key>x</key><real>370</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>4</key>
+			<dict>
+				<key>x</key><real>394</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>5</key>
+			<dict>
+				<key>x</key><real>418</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>6</key>
+			<dict>
+				<key>x</key><real>442</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>7</key>
+			<dict>
+				<key>x</key><real>0</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>8</key>
+			<dict>
+				<key>x</key><real>24</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>9</key>
+			<dict>
+				<key>x</key><real>48</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>24</real>
+				<key>h</key><real>36</real>
+				
+				
+			</dict>
+                        <key>background-day</key>
+			<dict>
+				<key>x</key><real>184</real>
+				<key>y</key><real>468</real>
+				<key>w</key><real>288</real>
+				<key>h</key><real>512</real>
+				
+				
+			</dict>
+                        <key>background-night</key>
+			<dict>
+				<key>x</key><real>0</real>
+				<key>y</key><real>980</real>
+				<key>w</key><real>288</real>
+				<key>h</key><real>512</real>
+				
+				
+			</dict>
+                        <key>base</key>
+			<dict>
+				<key>x</key><real>0</real>
+				<key>y</key><real>356</real>
+				<key>w</key><real>336</real>
+				<key>h</key><real>112</real>
+				
+				
+			</dict>
+                        <key>bluebird-downflap</key>
+			<dict>
+				<key>x</key><real>16</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>bluebird-midflap</key>
+			<dict>
+				<key>x</key><real>50</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>bluebird-upflap</key>
+			<dict>
+				<key>x</key><real>84</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>gameover</key>
+			<dict>
+				<key>x</key><real>72</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>192</real>
+				<key>h</key><real>42</real>
+				
+				
+			</dict>
+                        <key>message</key>
+			<dict>
+				<key>x</key><real>0</real>
+				<key>y</key><real>468</real>
+				<key>w</key><real>184</real>
+				<key>h</key><real>267</real>
+				
+				
+			</dict>
+                        <key>pipe-green</key>
+			<dict>
+				<key>x</key><real>264</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>52</real>
+				<key>h</key><real>320</real>
+				
+				
+			</dict>
+                        <key>pipe-red</key>
+			<dict>
+				<key>x</key><real>316</real>
+				<key>y</key><real>36</real>
+				<key>w</key><real>52</real>
+				<key>h</key><real>320</real>
+				
+				
+			</dict>
+                        <key>redbird-downflap</key>
+			<dict>
+				<key>x</key><real>118</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>redbird-midflap</key>
+			<dict>
+				<key>x</key><real>152</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>redbird-upflap</key>
+			<dict>
+				<key>x</key><real>186</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>yellowbird-downflap</key>
+			<dict>
+				<key>x</key><real>220</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>yellowbird-midflap</key>
+			<dict>
+				<key>x</key><real>254</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+                        <key>yellowbird-upflap</key>
+			<dict>
+				<key>x</key><real>288</real>
+				<key>y</key><real>0</real>
+				<key>w</key><real>34</real>
+				<key>h</key><real>24</real>
+				
+				
+			</dict>
+		</dict>
+		<key>meta</key>
+		<dict>
+			<key>image</key>
+			<string>1.png</string>
+			<key>width</key>
+			<integer>472</integer>
+			<key>height</key>
+			<integer>1492</integer>
+		</dict>
+	</dict>
+</plist>

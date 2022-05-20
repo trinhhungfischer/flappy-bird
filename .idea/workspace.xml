@@ -1,33 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Start Project&#10;'">
-      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" afterDir="false" />
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Update main menu'">
+      <change afterPath="$PROJECT_DIR$/res/GameSprite.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/GameSprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/game/animation/character/chipu/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/game/animation/eff_dice_number/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/game/animation/firework_test/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/character/chipu/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/eff_dice_number/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/skeleton.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/game/animation/firework_test/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/character/chipu/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/character/chipu/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/eff_dice_number/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/eff_dice_number/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/firework_test/texture.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/high/game/animation/firework_test/texture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/en" beforeDir="false" afterPath="$PROJECT_DIR$/res/localize/en" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/vi" beforeDir="false" afterPath="$PROJECT_DIR$/res/localize/vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/shaders/change_color.fsh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/Localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/Localization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +309,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -345,6 +324,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workplace\base_project\res" />
       <recent name="D:\Project\TemplateGame\src\framework\plugins" />
       <recent name="D:\Project\lgrc_project\client\HelloJavascript\src\network\auto" />
       <recent name="D:\Project\lgrc_project\client\HelloJavascript\src\game\render\effect" />
@@ -555,13 +535,15 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -724,7 +706,8 @@
       <workItem from="1652922039534" duration="2038000" />
       <workItem from="1652941658591" duration="4123000" />
       <workItem from="1653009151440" duration="1110000" />
-      <workItem from="1653010306600" duration="3278000" />
+      <workItem from="1653010306600" duration="5627000" />
+      <workItem from="1653021312358" duration="988000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -733,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652848438089</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="'feat: Update main menu'">
+      <created>1653013646664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653013646664</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -831,7 +821,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'feat: Start Project&#10;'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'feat: Start Project&#10;'" />
+    <MESSAGE value="'feat: Update main menu'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'feat: Update main menu'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
