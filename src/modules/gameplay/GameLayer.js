@@ -3,29 +3,37 @@
  */
 
 
-var ScreenGame = cc.Layer.extend({
+var GameLayer = cc.Layer.extend({
     _itemMenu:null,
+    _bird:null,
+    _backSky:null,
     _beginPos:0,
     isMouseDown:false,
 
+
+
+
     ctor:function() {
         this._super();
-        this.loadGui();
-
+        this.init();
     },
-    loadGui:function() {
-        this.removeAllChildren();
+    init:function() {
         var size = cc.winSize;
 
-        var sprite = new cc.Sprite(res.base.img_btn_disable);
-        sprite.setAnchorPoint(cc.p(0, 1));
-        sprite.setPosition(cc.p(size.width / 2, size.height / 2));
-        var i = 0;
-        this.addChild(sprite);
+        cc.spriteFrameCache.addSpriteFrames(res.textureGame_plist);
+        this._bird = new Bird();
+
+        this._bird.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.addChild(this._bird);
+
+
+        this.addTouchListener();
+
+
     },
 
 
-    addTouchListenr:function () {
+    addTouchListener:function () {
         var self = this;
         cc.eventManager.addListener({
             prevTouchID: -1,
@@ -33,6 +41,7 @@ var ScreenGame = cc.Layer.extend({
 
             onTouchBegan: function (touch, event) {
 
+                return true;
             }
         }, this);
     }

@@ -35,7 +35,7 @@ var ScreenMenu = cc.Layer.extend({
     },
     onSelectStart:function(sender)
     {
-        fr.view(ScreenGame);
+        fr.view(GameLayer);
     },
     onSelectFeedBack:function(sender)
     {

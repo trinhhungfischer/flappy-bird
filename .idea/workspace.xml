@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Update main menu'">
-      <change afterPath="$PROJECT_DIR$/res/GameSprite.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/GameSprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Update Sprite Sheet'">
+      <change afterPath="$PROJECT_DIR$/res/grossini.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/grossini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/config/GameConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/Background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/GameSprite.plist" beforeDir="false" afterPath="$PROJECT_DIR$/res/GameSprite.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/GameSprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/GameSprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,7 @@
       <list>
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +51,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -305,11 +321,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorial/workshop/GameDemo" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -320,7 +338,6 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -337,7 +354,7 @@
       <recent name="D:\Project\lgrc_project\client\HelloJavascript\src\offline" />
     </key>
   </component>
-  <component name="RunManager" selected="JSBinding.Win32Debug">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -571,7 +588,7 @@
         <second key="connector_id" stringValue="jsbinding.win32.attach.connector" />
         <second key="remotePlatform" stringValue="Android" />
         <second key="host" stringValue="127.0.0.1" />
-        <second key="androidruntime" stringValue="C:\Program Files (x86)\Cocos\cocos-simulator-bin\android\Simulator.apk" />
+        <second key="androidruntime" stringValue="" />
         <second key="iosruntime" stringValue="" />
       </first>
       <method v="2">
@@ -606,8 +623,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JSBinding.Win32Debug" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JSBinding.Win32Debug" />
       </list>
     </recent_temporary>
   </component>
@@ -707,7 +724,12 @@
       <workItem from="1652941658591" duration="4123000" />
       <workItem from="1653009151440" duration="1110000" />
       <workItem from="1653010306600" duration="5627000" />
-      <workItem from="1653021312358" duration="988000" />
+      <workItem from="1653021312358" duration="1070000" />
+      <workItem from="1653268061466" duration="1842000" />
+      <workItem from="1653354121628" duration="7426000" />
+      <workItem from="1653361760456" duration="23000" />
+      <workItem from="1653361789796" duration="3238000" />
+      <workItem from="1653365127720" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -723,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653013646664</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="'feat: Update Sprite Sheet'">
+      <created>1653022358666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653022358666</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -822,7 +851,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'feat: Start Project&#10;'" />
     <MESSAGE value="'feat: Update main menu'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'feat: Update main menu'" />
+    <MESSAGE value="'feat: Update Sprite Sheet'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'feat: Update Sprite Sheet'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
