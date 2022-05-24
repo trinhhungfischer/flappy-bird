@@ -41,6 +41,9 @@ var GameLayer = cc.Layer.extend({
 
             onTouchBegan: function (touch, event) {
 
+                if (MW.SOUND) {
+                    var s = cc.audioEngine.playEffect(cc.sys.os == cc.sys.OS_WINDOWS || cc.sys.OS_WINRT ? res.soundWindEffect_wav : res.soundWindEffect_mp3);
+                }
                 return true;
             }
         }, this);

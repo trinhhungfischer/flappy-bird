@@ -10,13 +10,17 @@ var res = {
     //zcsd
     //screen
 
+    // sound
+    soundWindEffect_mp3: 'Audio/wing.mp3',
+    soundWindEffect_wav: 'Audio/wing.wav',
+
     // plist
     textureGame_plist: "GameSprite.plist",
     textureGame_png: "GameSprite.png",
 
     // image
-    imageBlueBird: "sprites/bluebird-midflap.png",
-    imageBackGround: "sprites/background-day.png"
+    imageBackgroundMain: "background-mainscreen.png"
+
 
 };
 

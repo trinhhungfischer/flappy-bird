@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Update Sprite Sheet'">
-      <change afterPath="$PROJECT_DIR$/res/grossini.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/grossini.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/config/GameConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/Background.js" afterDir="false" />
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Add sprite sheet module'">
+      <change afterPath="$PROJECT_DIR$/res/background-mainscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/gameplay/Pipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/mix/ScreenSetting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/GameSprite.plist" beforeDir="false" afterPath="$PROJECT_DIR$/res/GameSprite.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/GameSprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/GameSprite.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/ScreenGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/config/GameConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/config/GameConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/testnetwork/ScreenNetwork.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/testnetwork/network/Network.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/testnetwork/network/Packet.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -327,7 +328,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorial/workshop/GameDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -354,7 +355,7 @@
       <recent name="D:\Project\lgrc_project\client\HelloJavascript\src\offline" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JSBinding.Win32Debug">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -552,19 +553,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/HelloJavascript/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -623,8 +611,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JSBinding.Win32Debug" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -729,7 +717,7 @@
       <workItem from="1653354121628" duration="7426000" />
       <workItem from="1653361760456" duration="23000" />
       <workItem from="1653361789796" duration="3238000" />
-      <workItem from="1653365127720" duration="623000" />
+      <workItem from="1653365127720" duration="3230000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -752,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653022358666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="'feat: Add sprite sheet module'">
+      <created>1653365828342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653365828342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -852,7 +847,8 @@
     <MESSAGE value="'feat: Start Project&#10;'" />
     <MESSAGE value="'feat: Update main menu'" />
     <MESSAGE value="'feat: Update Sprite Sheet'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'feat: Update Sprite Sheet'" />
+    <MESSAGE value="'feat: Add sprite sheet module'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'feat: Add sprite sheet module'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

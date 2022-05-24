@@ -27,6 +27,11 @@ var ScreenMenu = cc.Layer.extend({
         this.addChild(btnSetting);
         btnSetting.addClickEventListener(this.onsSelectSetting.bind(this));
 
+        var background = new cc.Sprite(res.imageBackgroundMain);
+
+        background.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.addChild(background, -999);
+
 
         return true;
     },
@@ -43,7 +48,7 @@ var ScreenMenu = cc.Layer.extend({
     },
     onsSelectSetting:function(sender)
     {
-        fr.view(ScreenDragonbones);
+        fr.view(SettingsLayer);
     }
 
 });

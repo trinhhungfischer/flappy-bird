@@ -39,13 +39,13 @@
         "src/base/Resource.js",
         "src/base/UIFactory.js",
         "src/modules/animation/ScreenDragonbones.js",
+        "src/modules/config/GameConfig.js",
         "src/modules/gameplay/Background.js",
         "src/modules/gameplay/Bird.js",
         "src/modules/gameplay/GameLayer.js",
+        "src/modules/gameplay/Pipe.js",
         "src/modules/localization/ScreenLocalization.js",
         "src/modules/mainmenu/ScreenMenu.js",
-        "src/modules/testnetwork/network/Network.js",
-        "src/modules/testnetwork/network/Packet.js",
-        "src/modules/testnetwork/ScreenNetwork.js"
+        "src/modules/mix/ScreenSetting.js"
     ]
 }
