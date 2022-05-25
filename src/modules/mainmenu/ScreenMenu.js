@@ -15,7 +15,7 @@ var ScreenMenu = cc.Layer.extend({
 
         var xBtn = size.width / 2;
 
-        var btnStart = gv.commonButton(200, 64, xBtn, 3 * cc.winSize.height / 4, "Start");
+        var btnStart = gv.commonButton(300, 100, xBtn, 3 * cc.winSize.height / 4, "Start");
         this.addChild(btnStart);
         btnStart.addClickEventListener(this.onSelectStart.bind(this));
 
@@ -29,6 +29,7 @@ var ScreenMenu = cc.Layer.extend({
 
         var background = new cc.Sprite(res.imageBackgroundMain);
 
+        background.runAction(cc.scaleTo(0, size.width / background.width));
         background.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(background, -999);
 
