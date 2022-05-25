@@ -17,6 +17,7 @@ var GameLayer = cc.Layer.extend({
         this._super();
         this.init();
     },
+
     init:function() {
         var size = cc.winSize;
 
@@ -27,8 +28,14 @@ var GameLayer = cc.Layer.extend({
         this.addChild(this._bird);
 
 
-        this.addTouchListener();
+        this._backSky = new BackSky();
+        this.addChild(this._backSky, -999);
 
+        // Schedule
+        this.scheduleUpdate();
+
+
+        this.addTouchListener();
 
     },
 
@@ -40,6 +47,7 @@ var GameLayer = cc.Layer.extend({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
 
             onTouchBegan: function (touch, event) {
+                self._bird.jump();
 
                 if (MW.SOUND) {
                     var s = cc.audioEngine.playEffect(cc.sys.os == cc.sys.OS_WINDOWS || cc.sys.OS_WINRT ? res.soundWindEffect_wav : res.soundWindEffect_mp3);
@@ -47,5 +55,9 @@ var GameLayer = cc.Layer.extend({
                 return true;
             }
         }, this);
+    },
+
+    update: function (dt) {
+        this._bird.update(dt);
     }
 });

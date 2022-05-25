@@ -10,3 +10,8 @@ MW.BIRD_TYPE = {
 
 MW.SOUND = true;
 MW.FONTCOLOR = "#1f2d96";
+
+MW.CONTAINER = {
+    BACKSKYS:[],
+    BACKTILEMAPS:[]
+}

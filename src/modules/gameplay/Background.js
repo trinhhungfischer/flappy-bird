@@ -2,8 +2,8 @@
 var BackSky = cc.Sprite.extend({
     active:true,
     ctor:function () {
-        this._super("#bg01.png");
-        var rect = cc.rect(0, 1, this.width, this.height-2);
+        this._super(res.imageBackgroundMain);
+        var rect = cc.rect(0, 1, this.width, this.height);
         this.setTextureRect(rect);
         this.anchorX = 0;
         this.anchorY = 0;
@@ -44,13 +44,6 @@ BackSky.preSet = function () {
         background.active = false;
     }
 };
-
-var BackTileMapLvl1 = [
-    "lvl1_map1.png",
-    "lvl1_map2.png",
-    "lvl1_map3.png",
-    "lvl1_map4.png"
-];
 
 var BackTileMap = cc.Sprite.extend({
     active:true,
