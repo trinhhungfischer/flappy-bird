@@ -39,11 +39,19 @@ var GameLayer = cc.Layer.extend({
         this._bird.setPosition(cc.p(winSize.width / 2, 3 * winSize.height / 4));
         this.addChild(this._bird, MW.UNIT_TAG.BIRD);
 
-        this._readySprite = cc.Sprite("#message.png");
-        this._readySprite.setPosition(cc.p(winSize.width / 2,  winSize.height / 2));
-        this.addChild(this._readySprite, MW.UNIT_TAG.READY);
+        this.initReadySprite();
 
-
+        // score
+        this.lblScore = new cc.LabelTTF("Score: 0", res.fontPixelBoy);
+        this.lblScore.attr({
+            anchorX: 1,
+            anchorY: 0,
+            x: winSize.width - 5,
+            y: winSize.height - 30,
+            scale: MW.SCALE
+        });
+        this.lblScore.textAlign = cc.TEXT_ALIGNMENT_RIGHT;
+        this.addChild(this.lblScore, MW.ZORDER.SCORE);
 
         // Schedule
         this.addTouchListener();
@@ -63,18 +71,15 @@ var GameLayer = cc.Layer.extend({
         this._lastPipe = this.initPairPipe();
 
 
-        // score
-        this.lblScore = new cc.LabelTTF("Score: 0", res.fontPixelBoy);
-        this.lblScore.attr({
-            anchorX: 1,
-            anchorY: 0,
-            x: winSize.width - 5,
-            y: winSize.height - 30,
-            scale: MW.SCALE
-        });
-        this.lblScore.textAlign = cc.TEXT_ALIGNMENT_RIGHT;
-        this.addChild(this.lblScore, MW.ZORDER.SCORE);
 
+
+    },
+
+    initReadySprite:function () {
+        var winSize = cc.director.getWinSize();
+        this._readySprite = cc.Sprite("#message.png");
+        this._readySprite.setPosition(cc.p(winSize.width / 2,  winSize.height / 2));
+        this.addChild(this._readySprite, MW.UNIT_TAG.READY);
     },
 
     checkIsCollide:function () {
@@ -169,9 +174,8 @@ var GameLayer = cc.Layer.extend({
 
                 self._bird.addForce();
 
-                // if (MW.SOUND) {
-                //     var s = cc.audioEngine.playEffect(cc.sys.os == cc.sys.OS_WINDOWS || cc.sys.OS_WINRT ? res.soundWindEffect_wav : res.soundWindEffect_mp3);
-                // }
+                if (MW.SOUND) {
+                }
 
                 return true;
             }
@@ -199,8 +203,27 @@ var GameLayer = cc.Layer.extend({
             this.checkIsCollide();
             this.initPipe();
             this.calculateScore();
+            this.updateUI()
         }
-        this.updateUI()
+        if (this._state == MW.GAME_STATE.OVER) {
+            this._state = MW.GAME_STATE.RETRY;
+            this._overSprite = cc.Sprite("#gameover.png");
+            this._overSprite.setPosition(g_sharedGameLayer.screenRect.width / 2, 3 *g_sharedGameLayer.screenRect.height / 4);
+            this.addChild(this._overSprite, MW.ZORDER.OVER);
+
+            this._retryText = new Label("Retry ?", res.fontPixelBoy);
+            this._retryText.attr({
+                anchorX: 0.5,
+                anchorY: 0.5,
+                x: g_sharedGameLayer.screenRect.width / 2,
+                y: this._overSprite.y - this._overSprite.height * 2,
+                scale: MW.SCALE
+            });
+            this._retryText.textAlign = cc.TEXT_ALIGNMENT_CENTER;
+            this.addChild(this._retryText, MW.ZORDER.SCORE);
+
+
+        }
     },
 
     calculateScore: function () {
@@ -212,6 +235,11 @@ var GameLayer = cc.Layer.extend({
                 down_pipe._isScore = true;
             }
         }
+
+    },
+
+    resetGame: function () {
+
 
     }
 

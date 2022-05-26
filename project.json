@@ -44,6 +44,7 @@
         "src/modules/gameplay/Bird.js",
         "src/modules/gameplay/GameLayer.js",
         "src/modules/gameplay/Ground.js",
+        "src/modules/gameplay/Label.js",
         "src/modules/gameplay/Pipe.js",
         "src/modules/localization/ScreenLocalization.js",
         "src/modules/mainmenu/ScreenMenu.js",

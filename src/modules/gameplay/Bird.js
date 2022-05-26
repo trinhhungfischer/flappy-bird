@@ -2,9 +2,9 @@
 
 var Bird = cc.Sprite.extend({
     _velocity: 0,
-    _xVelocity: 60,
-    _startVelocity: 350,
-    _gravity: -900,
+    _xVelocity: 100,
+    _startVelocity: 500,
+    _gravity: -1500,
     _size : cc.winSize,
     _rotation:0,
 
