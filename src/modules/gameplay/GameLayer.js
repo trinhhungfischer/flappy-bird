@@ -11,8 +11,13 @@ var GameLayer = cc.Layer.extend({
     _background:null,
     _beginPos:0,
     _ground: null,
-    _state:1,
+    _state: MW.GAME_STATE.READY,
     _texTransparentBatch:null,
+
+    _score: 0,
+    _firstClick: false,
+    _lastPipe: null,
+    _readySprite: null,
 
     isMouseDown:false,
     screenRect:null,
@@ -30,7 +35,11 @@ var GameLayer = cc.Layer.extend({
         this._bird = new Bird();
 
         this._bird.setPosition(cc.p(winSize.width / 2, 3 * winSize.height / 4));
-        this.addChild(this._bird, 100);
+        this.addChild(this._bird, MW.UNIT_TAG.BIRD);
+
+        this._readySprite = cc.Sprite("#message.png");
+        this._readySprite.setPosition(cc.p(winSize.width / 2,  winSize.height / 2));
+        this.addChild(this._readySprite, MW.UNIT_TAG.READY);
 
 
 
@@ -51,7 +60,7 @@ var GameLayer = cc.Layer.extend({
 
         this.initBackground();
         this.initGround();
-        this.initPairPipe();
+        this._lastPipe = this.initPairPipe();
 
     },
 
@@ -108,16 +117,26 @@ var GameLayer = cc.Layer.extend({
         }
     },
 
+
+
     initPairPipe:function () {
-      var down_pipe = Pipe.getOrCreate(MW.UNIT_TAG.DOWN_PIPE);
-      down_pipe.y = g_sharedGameLayer.screenRect.height;
-      var upper_pipe = Pipe.getOrCreate(MW.UNIT_TAG.UPPER_PIPE);
-      upper_pipe.y = g_sharedGameLayer.screenRect.height / 4;
+        var distance = Math.random() * MW.PIPE_CONFIG.RANDOM_RANGE;
+        var down_pipe = Pipe.getOrCreate(MW.UNIT_TAG.DOWN_PIPE);
+        down_pipe.y = g_sharedGameLayer.screenRect.height + distance;
+        var upper_pipe = Pipe.getOrCreate(MW.UNIT_TAG.UPPER_PIPE);
+        upper_pipe.y = g_sharedGameLayer.screenRect.height / 4 + distance;
+        return down_pipe;
+    },
+
+    initPipe:function (dt) {
+        if (this._lastPipe.x < g_sharedGameLayer.screenRect.width * 7 / 8)
+        {
+            this._lastPipe = this.initPairPipe();
+        }
     },
 
     collide:function (a, b) {
         var ax = a.x, ay = a.y, bx = b.x, by = b.y;
-
 
         var aRect = a.collideRect(ax, ay);
         var bRect = b.collideRect(bx, by);
@@ -131,6 +150,10 @@ var GameLayer = cc.Layer.extend({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
 
             onTouchBegan: function (touch, event) {
+                if (!self._firstClick) {
+                    self._state = MW.GAME_STATE.PLAY;
+                    self._readySprite.visible = false;
+                }
                 self._bird.addForce();
 
                 if (MW.SOUND) {
@@ -154,9 +177,28 @@ var GameLayer = cc.Layer.extend({
                 if (down_pipe.active) down_pipe.update(dt);
             }
 
-            this.checkIsCollide();
+            this.checkIsCollide(dt);
+            this.initPipe(dt);
+            this.caculateScore(dt);
         }
+    },
+
+    caculateScore: function (dt) {
+        for (var j = 0; j < MW.CONTAINER.DOWN_PIPE.length; j++) {
+            var down_pipe = MW.CONTAINER.DOWN_PIPE[j];
+            cc.log(down_pipe.x);
+            if (down_pipe.active && (!down_pipe._isScore) && (down_pipe.x < g_sharedGameLayer / 2 - down_pipe.width / 2))
+            {
+                this._score += 1;
+                down_pipe._isScore = true;
+                cc.log(this._score);
+            }
+        }
+
     }
+
+
+
 });
 
 GameLayer.scene = function () {

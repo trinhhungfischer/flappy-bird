@@ -24,6 +24,7 @@ MW.UNIT_TAG = {
     UPPER_PIPE: 1,
     DOWN_PIPE: 2,
     BIRD: 3,
+    READY: 999,
 }
 
 MW.CONTAINER = {
@@ -43,4 +44,8 @@ MW.ZORDER = {
     BACKGROUND: -999,
     BIRD: 50,
     GROUND: 20
+}
+
+MW.PIPE_CONFIG = {
+    RANDOM_RANGE: 100,
 }

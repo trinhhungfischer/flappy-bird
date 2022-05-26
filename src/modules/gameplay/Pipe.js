@@ -2,13 +2,20 @@
 
 var Pipe = cc.Sprite.extend({
     _speed : 100,
+    _mode: null,
+    _isScore: false,
     active:true,
+    _startPos: null,
 
-    ctor:function () {
+    ctor:function (mode) {
         this._super("#pipe-green.png");
         this.anchorX = 0.5;
         this.anchorY = 0.5;
-        this.x = g_sharedGameLayer.screenRect.width;
+        this._startPos = g_sharedGameLayer.screenRect.width + this.width;
+        this.x = this._startPos;
+        this._mode = mode;
+        if (mode == MW.UNIT_TAG.DOWN_PIPE)
+            this.setRotation(180);
     },
 
     leftMoving:function (dt) {
@@ -18,11 +25,21 @@ var Pipe = cc.Sprite.extend({
     update:function (dt) {
         if (this.active)
             this.leftMoving(dt);
+            if (this.x < 0 - this.width) {
+                this.destroy();
+            }
     },
 
     collideRect:function (x, y){
         var w = this.width, h = this.height;
         return cc.rect(x - w / 2, y - h / 2, w, h);
+    },
+
+    destroy:function () {
+        this.active = false;
+        this.visible = true;
+        this._isScore = false;
+        this.x = this._startPos;
     }
 
 });
@@ -56,13 +73,12 @@ Pipe.getOrCreate = function (mode){
 
 Pipe.create = function (mode) {
     if (mode == MW.UNIT_TAG.UPPER_PIPE) {
-        var pipe = new Pipe();
+        var pipe = new Pipe(MW.UNIT_TAG.UPPER_PIPE);
         g_sharedGameLayer.addChild(pipe, MW.ZORDER.PIPE);
         MW.CONTAINER.UPPER_PIPE.push(pipe);
     }
     else {
-        var pipe = new Pipe();
-        pipe.setRotation(180);
+        var pipe = new Pipe(MW.UNIT_TAG.DOWN_PIPE);
         g_sharedGameLayer.addChild(pipe, MW.ZORDER.PIPE);
         MW.CONTAINER.DOWN_PIPE.push(pipe);
     }

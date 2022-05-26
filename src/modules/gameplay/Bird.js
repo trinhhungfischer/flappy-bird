@@ -2,8 +2,9 @@
 
 var Bird = cc.Sprite.extend({
     _velocity: 0,
-    _startVelocity: 200,
-    _gravity: -300,
+    _xVelocity: 60,
+    _startVelocity: 350,
+    _gravity: -900,
     _size : cc.winSize,
     _rotation:0,
 
@@ -37,8 +38,9 @@ var Bird = cc.Sprite.extend({
     drop: function (dt) {
         this._velocity += this._gravity * dt;
         this.y += this._velocity * dt;
+        this._rotation -= this._velocity / Math.sqrt(this._velocity * this._velocity + this._xVelocity * this._xVelocity) * 180 / 3.14 * dt;
         // this._rotation += dt * 10;
-        // this.setRotation(this._rotation);
+        this.setRotation(this._rotation);
     },
 
     collideRect:function (x, y){
