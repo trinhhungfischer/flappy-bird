@@ -43,9 +43,13 @@ MW.ZORDER = {
     PIPE: 10,
     BACKGROUND: -999,
     BIRD: 50,
-    GROUND: 20
+    GROUND: 20,
+    SCORE: 100,
+    OVER: 999
 }
 
 MW.PIPE_CONFIG = {
     RANDOM_RANGE: 100,
 }
+
+MW.SCALE = 2.0

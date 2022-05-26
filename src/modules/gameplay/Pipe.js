@@ -16,6 +16,7 @@ var Pipe = cc.Sprite.extend({
         this._mode = mode;
         if (mode == MW.UNIT_TAG.DOWN_PIPE)
             this.setRotation(180);
+
     },
 
     leftMoving:function (dt) {

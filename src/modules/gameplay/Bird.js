@@ -17,13 +17,13 @@ var Bird = cc.Sprite.extend({
 
 
         var animFrames = [];
-        //animFrames.push(frame2);
         animFrames.push(frame0);
         animFrames.push(frame1);
 
         var animation = new cc.Animation(animFrames, 0.3);
         var animate = cc.animate(animation);
         this.runAction(animate.repeatForever());
+
     },
 
     update:function(dt) {

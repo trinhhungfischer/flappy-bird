@@ -7,6 +7,7 @@ var res = {
     //font
     FONT_BITMAP_NUMBER_1:"fonts/number_1.fnt",
     FONT_BITMAP_DICE_NUMBER: "fonts/diceNumber.fnt",
+    fontPixelBoy: 'fonts/Pixeboy.ttf',
     //zcsd
     //screen
 
@@ -19,8 +20,7 @@ var res = {
     textureGame_png: "GameSprite.png",
 
     // image
-    imageBackgroundMain: "background-mainscreen.png"
-
+    imageBackgroundMain: "background-mainscreen.png",
 
 };
 

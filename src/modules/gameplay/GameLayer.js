@@ -18,9 +18,11 @@ var GameLayer = cc.Layer.extend({
     _firstClick: false,
     _lastPipe: null,
     _readySprite: null,
+    _overSprite: null,
 
     isMouseDown:false,
     screenRect:null,
+    lblScore:null,
 
     ctor:function() {
         this._super();
@@ -56,11 +58,22 @@ var GameLayer = cc.Layer.extend({
         Ground.preSet();
         Pipe.preSet();
 
-        cc.log(MW.CONTAINER.GROUND.length);
-
         this.initBackground();
         this.initGround();
         this._lastPipe = this.initPairPipe();
+
+
+        // score
+        this.lblScore = new cc.LabelTTF("Score: 0", res.fontPixelBoy);
+        this.lblScore.attr({
+            anchorX: 1,
+            anchorY: 0,
+            x: winSize.width - 5,
+            y: winSize.height - 30,
+            scale: MW.SCALE
+        });
+        this.lblScore.textAlign = cc.TEXT_ALIGNMENT_RIGHT;
+        this.addChild(this.lblScore, MW.ZORDER.SCORE);
 
     },
 
@@ -117,8 +130,6 @@ var GameLayer = cc.Layer.extend({
         }
     },
 
-
-
     initPairPipe:function () {
         var distance = Math.random() * MW.PIPE_CONFIG.RANDOM_RANGE;
         var down_pipe = Pipe.getOrCreate(MW.UNIT_TAG.DOWN_PIPE);
@@ -128,7 +139,7 @@ var GameLayer = cc.Layer.extend({
         return down_pipe;
     },
 
-    initPipe:function (dt) {
+    initPipe:function () {
         if (this._lastPipe.x < g_sharedGameLayer.screenRect.width * 7 / 8)
         {
             this._lastPipe = this.initPairPipe();
@@ -153,20 +164,28 @@ var GameLayer = cc.Layer.extend({
                 if (!self._firstClick) {
                     self._state = MW.GAME_STATE.PLAY;
                     self._readySprite.visible = false;
+                    self._firstClick = true;
                 }
+
                 self._bird.addForce();
 
-                if (MW.SOUND) {
-                    var s = cc.audioEngine.playEffect(cc.sys.os == cc.sys.OS_WINDOWS || cc.sys.OS_WINRT ? res.soundWindEffect_wav : res.soundWindEffect_mp3);
-                }
+                // if (MW.SOUND) {
+                //     var s = cc.audioEngine.playEffect(cc.sys.os == cc.sys.OS_WINDOWS || cc.sys.OS_WINRT ? res.soundWindEffect_wav : res.soundWindEffect_mp3);
+                // }
+
                 return true;
             }
         }, this);
     },
 
+    updateUI:function () {
+      this.lblScore.setString("Score: " + this._score);
+    },
+
     update: function (dt) {
         if (this._state == MW.GAME_STATE.PLAY) {
             this._bird.update(dt);
+
             for (var j = 0; j < MW.CONTAINER.UPPER_PIPE.length; j++) {
                 var upper_pipe = MW.CONTAINER.UPPER_PIPE[j];
                 if (upper_pipe.active) upper_pipe.update(dt);
@@ -177,27 +196,24 @@ var GameLayer = cc.Layer.extend({
                 if (down_pipe.active) down_pipe.update(dt);
             }
 
-            this.checkIsCollide(dt);
-            this.initPipe(dt);
-            this.caculateScore(dt);
+            this.checkIsCollide();
+            this.initPipe();
+            this.calculateScore();
         }
+        this.updateUI()
     },
 
-    caculateScore: function (dt) {
+    calculateScore: function () {
         for (var j = 0; j < MW.CONTAINER.DOWN_PIPE.length; j++) {
             var down_pipe = MW.CONTAINER.DOWN_PIPE[j];
-            cc.log(down_pipe.x);
-            if (down_pipe.active && (!down_pipe._isScore) && (down_pipe.x < g_sharedGameLayer / 2 - down_pipe.width / 2))
+            if (down_pipe.active && (!down_pipe._isScore) && (down_pipe.x < g_sharedGameLayer.screenRect.width / 2 - down_pipe.width / 2))
             {
                 this._score += 1;
                 down_pipe._isScore = true;
-                cc.log(this._score);
             }
         }
 
     }
-
-
 
 });
 
