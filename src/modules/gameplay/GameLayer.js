@@ -141,7 +141,9 @@ var GameLayer = cc.Layer.extend({
         var down_pipe = Pipe.getOrCreate(MW.UNIT_TAG.DOWN_PIPE);
         down_pipe.y = g_sharedGameLayer.screenRect.height - distance;
         var upper_pipe = Pipe.getOrCreate(MW.UNIT_TAG.UPPER_PIPE);
-        upper_pipe.y = g_sharedGameLayer.screenRect.height / 4 - distance;
+
+        var mode = Math.random() + 3;
+        upper_pipe.y = g_sharedGameLayer.screenRect.height / mode - distance;
         return down_pipe;
     },
 

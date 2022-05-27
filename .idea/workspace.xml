@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Done'">
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'fix: Fix background mainscreen'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +310,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorial/workshop/GameDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
@@ -326,11 +326,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workplace\flappy_bird\res" />
       <recent name="D:\workplace\flappy_bird\res\fonts" />
       <recent name="D:\workplace\base_project\frameworks" />
       <recent name="D:\workplace\base_project\res" />
       <recent name="D:\Project\TemplateGame\src\framework\plugins" />
-      <recent name="D:\Project\lgrc_project\client\HelloJavascript\src\network\auto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workplace\base_project" />
@@ -713,7 +713,7 @@
       <workItem from="1653563967640" duration="104000" />
       <workItem from="1653610216573" duration="225000" />
       <workItem from="1653610626008" duration="242000" />
-      <workItem from="1653610989853" duration="8062000" />
+      <workItem from="1653610989853" duration="8968000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -792,7 +792,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653618787676</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="'feat: Done'">
+      <created>1653619519109</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653619519109</updated>
+    </task>
+    <task id="LOCAL-00013" summary="'fix: Fix background mainscreen'">
+      <created>1653619546000</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653619546000</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -901,7 +915,8 @@
     <MESSAGE value="Add retry" />
     <MESSAGE value="Add new Label format" />
     <MESSAGE value="'feat: Done'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'feat: Done'" />
+    <MESSAGE value="'fix: Fix background mainscreen'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'fix: Fix background mainscreen'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
