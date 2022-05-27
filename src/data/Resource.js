@@ -22,6 +22,7 @@ var res = {
     // image
     imageBackgroundMain: "background-mainscreen.png",
 
+
 };
 
 var g_resources = [
