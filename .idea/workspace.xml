@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Done gameplay'" />
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Done gameplay'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/config/GameConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/config/GameConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/Label.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/Label.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/mix/ScreenSetting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/mix/ScreenSetting.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +314,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorial/workshop/TestJS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tutorial/workshop/GameDemo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
@@ -708,6 +715,9 @@
       <workItem from="1653525557145" duration="1671000" />
       <workItem from="1653527354116" duration="12423000" />
       <workItem from="1653563967640" duration="104000" />
+      <workItem from="1653610216573" duration="225000" />
+      <workItem from="1653610626008" duration="242000" />
+      <workItem from="1653610989853" duration="7304000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -772,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653564067007</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add new Label format">
+      <created>1653610246149</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653610246149</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -879,7 +896,8 @@
     <MESSAGE value="'feat: Almost done gameplay'" />
     <MESSAGE value="'feat: Done gameplay'" />
     <MESSAGE value="Add retry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add retry" />
+    <MESSAGE value="Add new Label format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new Label format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

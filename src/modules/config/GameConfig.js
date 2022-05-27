@@ -54,3 +54,14 @@ MW.PIPE_CONFIG = {
 }
 
 MW.SCALE = 2.0
+
+MW.GAME_LAYER_TEXT = {
+    RETRY: 1,
+    BACK_MAIN: 2,
+}
+
+MW.GAME_MODE = {
+    EASY: 4,
+    MEDIUM: 3.5,
+    HIGH: 3
+}

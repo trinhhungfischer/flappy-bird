@@ -19,6 +19,8 @@ var GameLayer = cc.Layer.extend({
     _lastPipe: null,
     _readySprite: null,
     _overSprite: null,
+    _retryText:null,
+    _backMenuText:null,
 
     isMouseDown:false,
     screenRect:null,
@@ -27,6 +29,7 @@ var GameLayer = cc.Layer.extend({
     ctor:function() {
         this._super();
         this.init();
+        g_sharedGameLayer = this;
 
     },
 
@@ -69,8 +72,6 @@ var GameLayer = cc.Layer.extend({
         this.initBackground();
         this.initGround();
         this._lastPipe = this.initPairPipe();
-
-
 
 
     },
@@ -138,9 +139,9 @@ var GameLayer = cc.Layer.extend({
     initPairPipe:function () {
         var distance = Math.random() * MW.PIPE_CONFIG.RANDOM_RANGE;
         var down_pipe = Pipe.getOrCreate(MW.UNIT_TAG.DOWN_PIPE);
-        down_pipe.y = g_sharedGameLayer.screenRect.height + distance;
+        down_pipe.y = g_sharedGameLayer.screenRect.height - distance;
         var upper_pipe = Pipe.getOrCreate(MW.UNIT_TAG.UPPER_PIPE);
-        upper_pipe.y = g_sharedGameLayer.screenRect.height / 4 + distance;
+        upper_pipe.y = g_sharedGameLayer.screenRect.height / 4 - distance;
         return down_pipe;
     },
 
@@ -205,13 +206,13 @@ var GameLayer = cc.Layer.extend({
             this.calculateScore();
             this.updateUI()
         }
-        if (this._state == MW.GAME_STATE.OVER) {
+        if (this._state == MW.GAME_STATE.OVER && this._state != null) {
             this._state = MW.GAME_STATE.RETRY;
             this._overSprite = cc.Sprite("#gameover.png");
             this._overSprite.setPosition(g_sharedGameLayer.screenRect.width / 2, 3 *g_sharedGameLayer.screenRect.height / 4);
             this.addChild(this._overSprite, MW.ZORDER.OVER);
 
-            this._retryText = new Label("Retry ?", res.fontPixelBoy);
+            this._retryText = new Label("Retry ?", res.fontPixelBoy, MW.GAME_LAYER_TEXT.RETRY);
             this._retryText.attr({
                 anchorX: 0.5,
                 anchorY: 0.5,
@@ -221,6 +222,18 @@ var GameLayer = cc.Layer.extend({
             });
             this._retryText.textAlign = cc.TEXT_ALIGNMENT_CENTER;
             this.addChild(this._retryText, MW.ZORDER.SCORE);
+
+            this._backMenuText = new Label("Main Menu ?", res.fontPixelBoy, MW.GAME_LAYER_TEXT.BACK_MAIN);
+            this._backMenuText.attr({
+                anchorX: 0.5,
+                anchorY: 0.5,
+                x: g_sharedGameLayer.screenRect.width / 2,
+                y: this._retryText.y - this._retryText.height * 4,
+                scale: MW.SCALE
+            });
+            this._backMenuText.textAlign = cc.TEXT_ALIGNMENT_CENTER;
+            this.addChild(this._backMenuText, MW.ZORDER.SCORE);
+
 
 
         }
@@ -238,10 +251,42 @@ var GameLayer = cc.Layer.extend({
 
     },
 
-    resetGame: function () {
+    onResetGame: function () {
+        var winSize = cc.director.getWinSize();
+
+        this._score = 0;
+        this._overSprite.visible = false;
+        this._retryText.visible = false;
+        this._firstClick = false;
+        this._backMenuText.visible = false;
+        this._bird.setPosition(cc.p(winSize.width / 2, 3 * winSize.height / 4));
+        for (var j = 0; j < MW.CONTAINER.DOWN_PIPE.length; j++) {
+            var down_pipe = MW.CONTAINER.DOWN_PIPE[j];
+            if (down_pipe.active) down_pipe.destroy();
+        }
+
+        for (var j = 0; j < MW.CONTAINER.UPPER_PIPE.length; j++) {
+            var upper_pipe = MW.CONTAINER.UPPER_PIPE[j];
+            if (upper_pipe.active) upper_pipe.destroy();
+        }
 
 
+
+        this._state = MW.GAME_STATE.READY;
+        this._lastPipe = this.initPairPipe();
+
+
+        this.initReadySprite();
+
+
+    },
+
+    onBackMenu: function () {
+        var scene = new ScreenMenu.scene();
+        cc.director.runScene(new cc.TransitionFade(1.2, scene));
     }
+
+
 
 });
 

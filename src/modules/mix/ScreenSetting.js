@@ -1,5 +1,8 @@
 
 var SettingsLayer = cc.Layer.extend({
+    item2:null,
+    _mode:null,
+
     ctor:function(){
         this._super();
         this.init();
@@ -41,12 +44,13 @@ var SettingsLayer = cc.Layer.extend({
 
         cc.MenuItemFont.setFontName("Arial");
         cc.MenuItemFont.setFontSize(26);
-        var item2 = new cc.MenuItemToggle(
+
+        this.item2 = new cc.MenuItemToggle(
             new cc.MenuItemFont("Easy"),
             new cc.MenuItemFont("Normal"),
             new cc.MenuItemFont("Hard"));
-        item2.setColor(cc.color(MW.FONTCOLOR));
-        item2.setCallback( this.onModeControl );
+        this.item2.setColor(cc.color(MW.FONTCOLOR));
+        this.item2.setCallback( this.onModeControl );
 
 
         cc.MenuItemFont.setFontName("Arial");
@@ -56,9 +60,10 @@ var SettingsLayer = cc.Layer.extend({
         var back = new cc.MenuItemLabel(label, this.onBackCallback);
         back.scale = 0.8;
 
-        var menu = new cc.Menu(title1, title2, item1, item2, back);
+        var menu = new cc.Menu(title1, title2, item1, this.item2, back);
         menu.alignItemsInColumns(2, 2, 1);
         this.addChild(menu);
+
 
         back.y -= 50;
 
@@ -69,17 +74,14 @@ var SettingsLayer = cc.Layer.extend({
         scene.addChild(new ScreenMenu());
         cc.director.runScene(new cc.TransitionFade(1.2, scene));
     },
-    // onSoundControl:function(){
-    //     MW.SOUND = !MW.SOUND;
-    //     var audioEngine = cc.audioEngine;
-    //     if(MW.SOUND){
-    //         audioEngine.playMusic(cc.sys.os == cc.sys.OS_WP8 || cc.sys.os == cc.sys.OS_WINRT ? res.mainMainMusic_wav : res.mainMainMusic_mp3);
-    //     }
-    //     else{
-    //         audioEngine.stopMusic();
-    //         audioEngine.stopAllEffects();
-    //     }
-    // },
+    onSoundControl:function(){
+        MW.SOUND = !MW.SOUND;
+    },
+
     onModeControl:function(){
+
+        var mode = this.item2.getSelectedItem();
+
+        cc.log(mode);
     }
 });

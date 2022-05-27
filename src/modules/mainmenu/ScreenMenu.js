@@ -41,7 +41,8 @@ var ScreenMenu = cc.Layer.extend({
     },
     onSelectStart:function(sender)
     {
-        fr.view(GameLayer);
+        var scene = GameLayer.scene();
+        cc.director.runScene(new cc.TransitionFade(1.2, scene));
     },
     onSelectFeedBack:function(sender)
     {
@@ -51,5 +52,11 @@ var ScreenMenu = cc.Layer.extend({
     {
         fr.view(SettingsLayer);
     }
-
 });
+
+ScreenMenu.scene = function () {
+    var scene = new cc.Scene();
+    var layer = new ScreenMenu();
+    scene.addChild(layer, 300);
+    return scene;
+};
