@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Done gameplay'">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/config/GameConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/config/GameConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
-    </list>
+    <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'feat: Done gameplay'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -542,17 +535,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/HelloJavascript/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -725,6 +707,7 @@
       <workItem from="1653475673602" duration="411000" />
       <workItem from="1653525557145" duration="1671000" />
       <workItem from="1653527354116" duration="12423000" />
+      <workItem from="1653563967640" duration="104000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
@@ -782,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653530885289</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add retry">
+      <created>1653564067007</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653564067007</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -888,7 +878,8 @@
     <MESSAGE value="'feat: Add bird and pipe'" />
     <MESSAGE value="'feat: Almost done gameplay'" />
     <MESSAGE value="'feat: Done gameplay'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'feat: Done gameplay'" />
+    <MESSAGE value="Add retry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add retry" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
