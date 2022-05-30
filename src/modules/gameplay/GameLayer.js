@@ -83,44 +83,6 @@ var GameLayer = cc.Layer.extend({
         this.addChild(this._readySprite, MW.UNIT_TAG.READY);
     },
 
-    checkIsCollide:function () {
-        var selChild;
-        // check collide
-        for (var i = 0; i < MW.CONTAINER.GROUND.length; i++) {
-            selChild = MW.CONTAINER.GROUND[i];
-            if (!selChild.active)
-                continue;
-
-            var bird = this._bird;
-            if (this.collide(selChild, bird)) {
-                // TODO: If bird collide with grounds
-                this._state = MW.GAME_STATE.OVER
-            }
-
-        }
-
-        for (var i = 0; i < MW.CONTAINER.UPPER_PIPE.length; i++) {
-            var bird = this._bird;
-            selChild = MW.CONTAINER.UPPER_PIPE[i];
-
-            if (selChild.active && this.collide(selChild, bird)) {
-                // TODO: If bird collide with upper pipes
-                this._state = MW.GAME_STATE.OVER
-            }
-        }
-
-        for (var i = 0; i < MW.CONTAINER.DOWN_PIPE.length; i++) {
-            var bird = this._bird;
-            selChild = MW.CONTAINER.DOWN_PIPE[i];
-
-            if (selChild.active && this.collide(selChild, bird)) {
-                // TODO: If bird collide with down pipes
-                this._state = MW.GAME_STATE.OVER
-            }
-        }
-
-    },
-
     initBackground:function () {
         for (var i = 0; i < numBackGround; i++) {
             this._background = Background.getOrCreate();
@@ -152,14 +114,6 @@ var GameLayer = cc.Layer.extend({
         {
             this._lastPipe = this.initPairPipe();
         }
-    },
-
-    collide:function (a, b) {
-        var ax = a.x, ay = a.y, bx = b.x, by = b.y;
-
-        var aRect = a.collideRect(ax, ay);
-        var bRect = b.collideRect(bx, by);
-        return cc.rectIntersectsRect(aRect, bRect);
     },
 
     addTouchListener:function () {
@@ -203,7 +157,6 @@ var GameLayer = cc.Layer.extend({
                 if (down_pipe.active) down_pipe.update(dt);
             }
 
-            this.checkIsCollide();
             this.initPipe();
             this.calculateScore();
             this.updateUI()
