@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'fix: Fix background mainscreen'">
+      <change afterPath="$PROJECT_DIR$/res/common/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/Bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/gameplay/GameLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/die.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/die.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/die.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/die.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/hit.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/hit.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/hit.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/hit.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/point.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/point.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/point.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/point.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/swoosh.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/swoosh.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/swoosh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/swoosh.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/wing.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/wing.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audio/wing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/wing.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Default/Button_Disable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Default/Button_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Default/Button_Press.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/en" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/localize/vi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,10 +335,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Project/lgrc_project/client/HelloJavascript/src/framework/Framework.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/common" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.searchVisible" value="true" />
@@ -327,11 +356,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\trinhhung\vng\flappy-bird\res\common" />
       <recent name="D:\workplace\flappy_bird\res" />
       <recent name="D:\workplace\flappy_bird\res\fonts" />
       <recent name="D:\workplace\base_project\frameworks" />
       <recent name="D:\workplace\base_project\res" />
-      <recent name="D:\Project\TemplateGame\src\framework\plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workplace\base_project" />
@@ -539,12 +568,70 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/HelloJavascript/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method v="2" />
     </configuration>
-    <configuration name="InPacketGenerate.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="InPacketFactory.js" working-dir="$PROJECT_DIR$/src/network">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Flappy Bird" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Flappy Bird" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InPacketGenerate.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$PROJECT_DIR$/../../../../Program Files/nodejs/node" path-to-js-file="InPacketFactory.js" working-dir="$PROJECT_DIR$/src/network">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
@@ -716,6 +803,7 @@
       <workItem from="1653610626008" duration="242000" />
       <workItem from="1653610989853" duration="9658000" />
       <workItem from="1653873416207" duration="1574000" />
+      <workItem from="1664267471414" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>

@@ -5,15 +5,10 @@
 
 var res = {
     //font
-    FONT_BITMAP_NUMBER_1:"fonts/number_1.fnt",
     FONT_BITMAP_DICE_NUMBER: "fonts/diceNumber.fnt",
     fontPixelBoy: 'fonts/Pixeboy.ttf',
-    //zcsd
-    //screen
 
-    // sound
-    soundWindEffect_mp3: 'Audio/wing.mp3',
-    soundWindEffect_wav: 'Audio/wing.wav',
+
 
     // plist
     textureGame_plist: "GameSprite.plist",
@@ -26,11 +21,11 @@ var res = {
 };
 
 var g_resources = [
-    "CloseNormal.png",
-    "CloseSelected.png",
-    "config.json",
-    "Default/Button_Disable.png",
-    "Default/Button_Normal.png",
-    "Default/Button_Press.png",
-
+    // sound
+    'audio/wing.mp3',
+    'audio/wing.wav',
+    'audio/die.wav',
+    'audio/hit.wav',
+    'audio/wing.wav',
+    'audio/point.wav'
 ];
