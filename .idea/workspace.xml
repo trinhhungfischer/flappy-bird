@@ -2,36 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'fix: Fix background mainscreen'">
-      <change afterPath="$PROJECT_DIR$/res/common/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/background-day.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/background-night.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/common_btn_gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/common_btn_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/common_btn_orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/common_btn_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/gameover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/common/message.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/die.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/die.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/die.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/die.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/hit.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/hit.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/hit.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/hit.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/point.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/point.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/point.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/point.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/swoosh.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/swoosh.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/swoosh.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/swoosh.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/wing.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/wing.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Audio/wing.wav" beforeDir="false" afterPath="$PROJECT_DIR$/res/audio/wing.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Default/Button_Disable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Default/Button_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Default/Button_Press.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/en" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/localize/vi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/common/9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -803,7 +792,7 @@
       <workItem from="1653610626008" duration="242000" />
       <workItem from="1653610989853" duration="9658000" />
       <workItem from="1653873416207" duration="1574000" />
-      <workItem from="1664267471414" duration="708000" />
+      <workItem from="1664267471414" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
