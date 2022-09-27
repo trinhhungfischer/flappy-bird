@@ -2,25 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d55f2b-12a8-484d-a811-f49e89a3e91c" name="Default" comment="'fix: Fix background mainscreen'">
-      <change afterPath="$PROJECT_DIR$/res/common/background-day.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/background-night.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/common_btn_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/common_btn_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/common_btn_orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/common_btn_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/gameover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/common/message.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/common/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/export_localize.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/export_localize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0000.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0000.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0001.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0001.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0002.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0002.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0003.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0003.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0004.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0004.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0005.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0005.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0006.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0006.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0007.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0007.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0008.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0008.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0009.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0009.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0010.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/idle0010.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/jump.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/jump.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/lig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/lightStage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0001.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0001.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0002.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0002.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0003.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0003.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0004.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0004.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0005.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0005.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0006.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0006.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0007.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0007.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0008.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0008.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0009.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0009.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0010.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0010.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0011.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/roll0011.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0001.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0001.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0002.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0002.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0003.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0003.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0004.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0004.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0005.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0005.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0006.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0006.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0007.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0007.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0008.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0008.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0009.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0009.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0010.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0010.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0011.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/sad0011.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0001.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0001.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0002.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0002.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0003.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0003.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0004.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0004.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0005.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0005.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0006.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0006.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0007.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0007.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0008.png copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/character/chipu/texture/win0008.png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Start copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 1 copy 19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 10 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 11 copy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 12 copy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 13 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 14 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 15 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 3 copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 4 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 5 copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 6 copy 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 7 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 8 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/Symbol 9 copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/bongnuoc copy 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/dice number _gr copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/dice number _gr grren copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/dice number _gr yellow copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/sprite 183 copy 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/sprite 187 copy 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/eff_dice_number/texture/sprite 187 copy 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/skeleton.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Fw copy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Fw copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Fw copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Fw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 1 copy 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/Symbol 2 copy 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/shape 29 copy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/shape 29 copy 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/sprite 183 copy 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/game/animation/firework_test/texture/sprite 183 copy 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/import/Localized_en" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/import/Localized_indo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/import/Localized_vn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/import/import_lang.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/import/import_lang.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/localize_text/lang.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/pack.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/pack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assests/temp/ResourceAnimation.temp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -792,7 +919,7 @@
       <workItem from="1653610626008" duration="242000" />
       <workItem from="1653610989853" duration="9658000" />
       <workItem from="1653873416207" duration="1574000" />
-      <workItem from="1664267471414" duration="1594000" />
+      <workItem from="1664267471414" duration="2178000" />
     </task>
     <task id="LOCAL-00001" summary="'feat: Start Project&#10;'">
       <created>1652848438089</created>
